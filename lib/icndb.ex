@@ -1,0 +1,2 @@
+defmodule Icndb do
+end
