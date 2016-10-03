@@ -1,3 +1,3 @@
-defmodule Incndb.CLI do
+defmodule Icndb.CLI do
 
 end
