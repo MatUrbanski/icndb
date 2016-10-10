@@ -1,5 +1,6 @@
 defmodule Icndb.CLI do
   alias Icndb.Joke
+  alias Icndb.Category
 
   @moduledoc """
   CLI module is responsible for handling input from console.

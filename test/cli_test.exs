@@ -63,13 +63,24 @@ defmodule CLITest do
       end
     end
 
-    test "count/0 is returned when argument is jokes_count" do
+    test "jokes_count/0 is returned when argument is jokes_count" do
       use_cassette "jokes_count" do
         execute_main = fn ->
           main(["jokes_count"])
         end
 
         assert capture_io(execute_main) =~ "539"
+      end
+    end
+
+    test "categories/0 is returned when argument is categories" do
+      use_cassette "all_categories" do
+        execute_main = fn ->
+          main(["categories"])
+        end
+
+        assert capture_io(execute_main) =~ "explicit"
+        assert capture_io(execute_main) =~ "nerdy"
       end
     end
   end
