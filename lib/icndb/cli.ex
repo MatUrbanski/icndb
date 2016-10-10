@@ -43,8 +43,20 @@ defmodule Icndb.CLI do
     ICNDB API
     - - - - -
 
-    ### Find random joke
+    ### Get random joke
     icndb random_joke
+
+    ### Get multiple random joke
+    icndb random_jokes 5
+
+    ### Find specific joke
+    icndb find_joke 1
+
+    ### Get jokes count
+    icndb jokes_count
+
+    ### Get categories
+    icndb categories
     """
   end
 

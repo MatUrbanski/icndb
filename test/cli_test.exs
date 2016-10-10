@@ -18,6 +18,10 @@ defmodule CLITest do
       end
 
       assert capture_io(execute_main) =~ "ICNDB API"
+      assert capture_io(execute_main) =~ "### Get random joke\nicndb random_joke"
+      assert capture_io(execute_main) =~ "### Find specific joke\nicndb find_joke 1"
+      assert capture_io(execute_main) =~ "### Get jokes count\nicndb jokes_count"
+      assert capture_io(execute_main) =~ "### Get categories\nicndb categories"
     end
 
     test "help instructions are returned when argument is --help" do
@@ -26,6 +30,10 @@ defmodule CLITest do
       end
 
       assert capture_io(execute_main) =~ "ICNDB API"
+      assert capture_io(execute_main) =~ "### Get random joke\nicndb random_joke"
+      assert capture_io(execute_main) =~ "### Find specific joke\nicndb find_joke 1"
+      assert capture_io(execute_main) =~ "### Get jokes count\nicndb jokes_count"
+      assert capture_io(execute_main) =~ "### Get categories\nicndb categories"
     end
 
     test "random_joke/0 is returned when argument is random_joke" do
