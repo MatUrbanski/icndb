@@ -3,10 +3,11 @@
 [![Build Status](https://travis-ci.org/MatUrbanski/icndb.svg?branch=master)](https://travis-ci.org/MatUrbanski/icndb)
 
 **API client for ICNDB API written in Elixir.**
+**More details in documentation: https://hexdocs.pm/icndb/api-reference.html**
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The package can be installed as:
 
   1. Add `icndb` to your list of dependencies in `mix.exs`:
 
