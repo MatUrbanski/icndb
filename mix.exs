@@ -8,7 +8,9 @@ defmodule Icndb.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      escript: [main_module: Icndb.CLI],
-     deps: deps()]
+     deps: deps(),
+     description: description(),
+     package: package()]
   end
 
   def application do
@@ -21,7 +23,8 @@ defmodule Icndb.Mixfile do
       {:poison, "~> 3.0"},
       {:exconstructor, "~> 1.0.2"},
       {:exvcr, "~> 0.7", only: :test},
-      {:credo, "~> 0.4", only: [:dev, :test]}
+      {:credo, "~> 0.4", only: [:dev, :test]},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
@@ -34,7 +37,7 @@ defmodule Icndb.Mixfile do
   def package do
     [
      name: :icndb,
-     files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+     files: ["lib", "mix.exs", "README*"],
      maintainers: ["Mateusz Urbański"],
      licenses: ["Apache 2.0"],
      links: %{"GitHub" => "https://github.com/MatUrbanski/icndb"}]
