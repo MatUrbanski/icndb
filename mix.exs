@@ -15,7 +15,7 @@ defmodule Icndb.Mixfile do
     [applications: [:logger, :httpoison, :exconstructor]]
   end
 
-  defp deps do
+  def deps do
     [
       {:httpoison, "~> 0.9.2"},
       {:poison, "~> 3.0"},
@@ -23,5 +23,20 @@ defmodule Icndb.Mixfile do
       {:exvcr, "~> 0.7", only: :test},
       {:credo, "~> 0.4", only: [:dev, :test]}
     ]
+  end
+
+  def description do
+    """
+    API client for ICNDB API written in Elixir.
+    """
+  end
+
+  def package do
+    [
+     name: :icndb,
+     files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+     maintainers: ["Mateusz Urbański"],
+     licenses: ["Apache 2.0"],
+     links: %{"GitHub" => "https://github.com/MatUrbanski/icndb"}]
   end
 end
