@@ -1,6 +1,6 @@
 defmodule Icndb.Joke do
   @moduledoc """
-  Joke is a module responsible for fetching jokes from ICNB API.`
+  Joke is a module responsible for fetching jokes from ICNB API.
   """
 
   defstruct id: "", joke: "", categories: []
@@ -52,7 +52,7 @@ defmodule Icndb.Joke do
   end
 
   @doc """
-  Fetch specified count of random jokes form ICNDB API.
+  Fetch specified count of random jokes from ICNDB API.
 
   ## Example
 
