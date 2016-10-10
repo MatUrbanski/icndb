@@ -1,6 +1,6 @@
 defmodule Icndb.Joke do
   @moduledoc """
-  Joke is struct that defines parameters: `id: "", joke: "", categories: []`
+  Joke is a module responsible for fetching jokes from ICNB API.`
   """
 
   defstruct id: "", joke: "", categories: []
