@@ -52,7 +52,8 @@ defmodule Icndb.CLI do
   end
 
   defp process({:random_jokes, count}) do
-    Joke.random(count)
+    count
+    |> Joke.random
     |> Enum.each(fn(joke) -> IO.puts joke.joke end)
   end
 
