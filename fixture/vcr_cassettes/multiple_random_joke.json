@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.icndb.com//jokes/random/2"
+    },
+    "response": {
+      "body": "{ \"type\": \"success\", \"value\": [ { \"id\": 240, \"joke\": \"In a fight between Batman and Darth Vader, the winner would be Chuck Norris.\", \"categories\": [] }, { \"id\": 82, \"joke\": \"When an episode of Walker Texas Ranger was aired in France, the French surrendered to Chuck Norris just to be on the safe side.\", \"categories\": [] } ]  }",
+      "headers": {
+        "Date": "Sun, 09 Oct 2016 17:32:42 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d5b42099a327c465ad8c70846cf5133c21476034362; expires=Mon, 09-Oct-17 17:32:42 GMT; path=/; domain=.icndb.com; HttpOnly",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Cache-Control": "no-cache, must-revalidate",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "2ef392cacc021ad5-DUS"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

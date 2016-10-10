@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.icndb.com//jokes/random"
+    },
+    "response": {
+      "body": "{ \"type\": \"success\", \"value\": { \"id\": 498, \"joke\": \"Chuck Norris hosting is 101% uptime guaranteed.\", \"categories\": [\"nerdy\"] } }",
+      "headers": {
+        "Date": "Thu, 06 Oct 2016 16:12:37 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d78553b9b3486454b68c4478527dc5ea01475770357; expires=Fri, 06-Oct-17 16:12:37 GMT; path=/; domain=.icndb.com; HttpOnly",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Cache-Control": "no-cache, must-revalidate",
+        "Expires": "Sat, 26 Jul 1997 05:00:00 GMT",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "2eda655bd9411ad5-DUS"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

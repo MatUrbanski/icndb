@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.icndb.com//jokes/1"
+    },
+    "response": {
+      "body": "{ \"type\": \"success\", \"value\": { \"id\": 1, \"joke\": \"Chuck Norris uses ribbed condoms inside out, so he gets the pleasure.\", \"categories\": [\"explicit\"] } }",
+      "headers": {
+        "Date": "Sun, 09 Oct 2016 17:37:30 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d287e35a156897d67c3c1f22f7d8701d21476034650; expires=Mon, 09-Oct-17 17:37:30 GMT; path=/; domain=.icndb.com; HttpOnly",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "2ef399d59e451aab-DUS"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

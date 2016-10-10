@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.icndb.com//jokes/count"
+    },
+    "response": {
+      "body": "{ \"type\": \"success\", \"value\": 539 }",
+      "headers": {
+        "Date": "Sun, 09 Oct 2016 17:40:11 GMT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d98c3482deff618190af290519b17d8b31476034811; expires=Mon, 09-Oct-17 17:40:11 GMT; path=/; domain=.icndb.com; HttpOnly",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+        "Server": "cloudflare-nginx",
+        "CF-RAY": "2ef39dc4f8901a8d-DUS"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
