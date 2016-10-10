@@ -1,6 +1,8 @@
 # Icndb
 
-**TODO: Add description**
+[![Build Status](https://travis-ci.org/MatUrbanski/icndb.svg?branch=master)](https://travis-ci.org/MatUrbanski/icndb)
+
+**API client for ICNDB API written in Elixir.**
 
 ## Installation
 
