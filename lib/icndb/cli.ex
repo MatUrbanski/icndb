@@ -33,6 +33,7 @@ defmodule Icndb.CLI do
        {_, ["random_jokes", count], _} -> {:random_jokes, count}
        {_, ["find_joke", id], _}       -> {:find_joke, id}
        {_, ["jokes_count"], _}         -> :jokes_count
+       {_, ["categories"], _}          -> :categories
     end
   end
 
@@ -65,5 +66,10 @@ defmodule Icndb.CLI do
   defp process(:jokes_count) do
     Joke.count
     |> IO.puts
+  end
+
+  defp process(:categories) do
+    Category.all
+    |> Enum.each(fn(category) -> IO.puts category.name end)
   end
 end

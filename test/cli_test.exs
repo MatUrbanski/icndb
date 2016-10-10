@@ -28,7 +28,7 @@ defmodule CLITest do
       assert capture_io(execute_main) =~ "ICNDB API"
     end
 
-    test "random_joke is returned when argument is random_joke" do
+    test "random_joke/0 is returned when argument is random_joke" do
       use_cassette "random_joke" do
         execute_main = fn ->
           main(["random_joke"])
@@ -36,6 +36,40 @@ defmodule CLITest do
 
         assert capture_io(execute_main) =~
           "Chuck Norris hosting is 101% uptime guaranteed."
+      end
+    end
+
+    test "random_joke/1 is returned when argument is random_joke 2" do
+      use_cassette "multiple_random_joke" do
+        execute_main = fn ->
+          main(["random_jokes", 2])
+        end
+
+        assert capture_io(execute_main) =~
+          "In a fight between Batman and Darth Vader, the winner would be Chuck Norris."
+        assert capture_io(execute_main) =~
+          "When an episode of Walker Texas Ranger was aired in France, the French surrendered to Chuck Norris just to be on the safe side."
+      end
+    end
+
+    test "find/1 is returned when argument is find 1" do
+      use_cassette "specific_joke" do
+        execute_main = fn ->
+          main(["find_joke", 1])
+        end
+
+        assert capture_io(execute_main) =~
+          "Chuck Norris uses ribbed condoms inside out, so he gets the pleasure."
+      end
+    end
+
+    test "count/0 is returned when argument is jokes_count" do
+      use_cassette "jokes_count" do
+        execute_main = fn ->
+          main(["jokes_count"])
+        end
+
+        assert capture_io(execute_main) =~ "539"
       end
     end
   end
